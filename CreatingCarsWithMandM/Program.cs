@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Object;
+//using System.Object;
 using System.Collections.Generic;
 
 class Car
@@ -23,6 +23,7 @@ class Program
     static void Main()
     {
         AddingCars();  
+        
     }
 
     static void AddingCars()
@@ -30,8 +31,8 @@ class Program
         List<object>  cars =  new List<object>();
         bool creatingCars = true;
 
-        while (creatingCars == true)
-            cars.Add(new Car("Sliten Volvo", 3, "kissgul"));
+        //while (creatingCars == true)
+        cars.Add(new Car("Sliten Volvo", 3, "kissgul"));
 
     }
 
