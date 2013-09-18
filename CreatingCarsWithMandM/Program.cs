@@ -36,6 +36,9 @@ class Program
         cars.Add(new Car("krockad Fiat", 4, "rostrosa"));
 
         string derp = cars.ToString();
+
+        toScreen();
+
         for (int i = 0; i < cars.Count; i++)
         Console.WriteLine("Din bil är " + cars[i].Color + ". Den har " + cars[i].NumberOfWheels + " hjul och är av modellen " + cars[i].Name + ".");
 
@@ -46,9 +49,12 @@ class Program
 
     }
 
-    static void toScreen(string msg)
+    static void toScreen()
     {
-        Console.Write("Your car has " + msg);
+
+        Console.WriteLine("Press any key to continue to your cars");
+        Console.ReadKey();
+        Environment.Exit(0);
     }
 }
 
