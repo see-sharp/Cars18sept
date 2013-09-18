@@ -28,12 +28,14 @@ class Program
 
     static void AddingCars()
     {
-        List<object>  cars =  new List<object>();
+        List<Car>  cars =  new List<Car>();
         bool creatingCars = true;
 
         //while (creatingCars == true)
         cars.Add(new Car("Sliten Volvo", 3, "kissgul"));
 
+        string derp = cars.ToString();
+        for (int i = 0; i < cars.Count; i++) ;
         Console.WriteLine(cars.ToString());
 
         for (int i = 0; i < cars.Count; i++)
@@ -41,7 +43,7 @@ class Program
             cars.RemoveAt(i);
         }
 
-        Console.WriteLine(cars.ToString());
+        Console.WriteLine(cars.ToString().ToString().ToString());
 
     }
 
