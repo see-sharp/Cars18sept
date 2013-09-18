@@ -36,9 +36,18 @@ class Program
         cars.Add(new Car("Hyfsad ford", 4, "bajsbrun"));
 
 
+        Console.WriteLine(cars.ToString());
+
+        for (int i = 0; i < cars.Count; i++)
+        {
+            cars.RemoveAt(i);
+        }
+
+        Console.WriteLine(cars.ToString());
+
     }
 
-    static void toScreen(string msg )
+    static void toScreen(string msg)
     {
         Console.Write("Your car has " + msg);
     }
