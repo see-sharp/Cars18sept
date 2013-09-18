@@ -33,6 +33,8 @@ class Program
 
         //while (creatingCars == true)
         cars.Add(new Car("Sliten Volvo", 3, "kissgul"));
+        cars.Add(new Car("Hyfsad ford", 4, "bajsbrun"));
+
 
         string derp = cars.ToString();
         for (int i = 0; i < cars.Count; i++) ;
