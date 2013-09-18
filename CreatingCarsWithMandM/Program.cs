@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Object;
+using System.Collections.Generic;
+
 class Car
 {
     public string Name { get; set; }
     public int NumberOfWheels { get; set; }
     public string Color { get; set; }
 
-    public Car(string name, int numberOfwheels, string Color)
+    public Car(string name, int numberOfwheels, string color)
     {
         Name = name;
         NumberOfWheels = numberOfwheels;
@@ -19,7 +22,17 @@ class Program
 {
     static void Main()
     {
-        Car SlitenVolvo = new Car("SlitenVolvo" //TODO M&M add arguments);       
+        AddingCars();  
+    }
+
+    static void AddingCars()
+    {
+        List<object>  cars =  new List<object>();
+        bool creatingCars = true;
+
+        while (creatingCars == true)
+            cars.Add(new Car("Sliten Volvo", 3, "kissgul"));
+
     }
 
     static void toScreen(string msg )
