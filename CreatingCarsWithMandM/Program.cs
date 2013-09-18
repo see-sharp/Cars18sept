@@ -21,7 +21,6 @@ class Program
 {
     static void Main()
     {
-        AddingCars();  
         
     }
 
