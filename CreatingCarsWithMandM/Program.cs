@@ -17,7 +17,7 @@ class Program
 {
     static void Main()
     {
-
+        Car SlitenVolvo = new Car("SlitenVolvo");       
     }
 
     static void toScreen( strign msg )
