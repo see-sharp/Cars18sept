@@ -19,12 +19,12 @@ class Program
 {
     static void Main()
     {
-        Car SlitenVolvo = new Car("SlitenVolvo");       
+        Car SlitenVolvo = new Car("SlitenVolvo" //TODO M&M add arguments);       
     }
 
-    static void toScreen( strign msg )
+    static void toScreen(string msg )
     {
-        Console.Write("Your car has " + msg ")";
+        Console.Write("Your car has " + msg);
     }
 }
 
