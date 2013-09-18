@@ -33,19 +33,16 @@ class Program
 
         //while (creatingCars == true)
         cars.Add(new Car("Sliten Volvo", 3, "kissgul"));
-        cars.Add(new Car("Hyfsad ford", 4, "bajsbrun"));
-
 
         string derp = cars.ToString();
-        for (int i = 0; i < cars.Count; i++) ;
-        Console.WriteLine(cars.ToString());
+        for (int i = 0; i < cars.Count; i++)
+        Console.WriteLine("Din bil är " + cars[i].Color + " Den har " + cars[i].NumberOfWheels + 
+            " Och är av modellen " + cars[i].Name);
 
         for (int i = 0; i < cars.Count; i++)
         {
             cars.RemoveAt(i);
         }
-
-        Console.WriteLine(cars.ToString().ToString().ToString());
 
     }
 
