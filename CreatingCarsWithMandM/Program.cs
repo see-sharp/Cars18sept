@@ -32,12 +32,12 @@ class Program
         bool creatingCars = true;
 
         //while (creatingCars == true)
-        cars.Add(new Car("Sliten Volvo", 3, "kissgul"));
+        cars.Add(new Car("sliten Volvo", 3, "kissgul"));
+        cars.Add(new Car("krockad Fiat", 4, "rostrosa"));
 
         string derp = cars.ToString();
         for (int i = 0; i < cars.Count; i++)
-        Console.WriteLine("Din bil är " + cars[i].Color + " Den har " + cars[i].NumberOfWheels + 
-            " Och är av modellen " + cars[i].Name);
+        Console.WriteLine("Din bil är " + cars[i].Color + ". Den har " + cars[i].NumberOfWheels + " hjul och är av modellen " + cars[i].Name + ".");
 
         for (int i = 0; i < cars.Count; i++)
         {
