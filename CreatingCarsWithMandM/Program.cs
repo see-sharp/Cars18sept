@@ -2,12 +2,14 @@
 class Car
 {
     public string Name { get; set; }
-    public string Wheels { get; set; }
+    public int NumberOfWheels { get; set; }
     public string Color { get; set; }
 
-    public Car(string name)
+    public Car(string name, int numberOfwheels, string Color)
     {
         Name = name;
+        NumberOfWheels = numberOfwheels;
+        Color = color;
     }
 }
 
