@@ -19,5 +19,10 @@ class Program
     {
 
     }
+
+    static void toScreen( strign msg )
+    {
+        Console.Write("Your car has " + msg ")";
+    }
 }
 
