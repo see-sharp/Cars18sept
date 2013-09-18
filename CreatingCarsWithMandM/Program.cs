@@ -33,6 +33,8 @@ class Program
 
         //while (creatingCars == true)
         cars.Add(new Car("Sliten Volvo", 3, "kissgul"));
+        cars.Add(new Car("Hyfsad ford", 4, "bajsbrun"));
+
 
     }
 
